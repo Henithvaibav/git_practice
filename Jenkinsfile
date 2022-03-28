@@ -9,7 +9,11 @@ stage('maven build'){
 steps{
 sh 'mvn clean package'
 }
-} 
+}
+  stage('Slack Notification'){
+    steps{
+      //configure slack notification
+    }
 }
 }
 }
